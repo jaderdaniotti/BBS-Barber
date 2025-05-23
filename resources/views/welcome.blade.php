@@ -13,17 +13,17 @@
     <section id="about" class=" py-5 ">
         <div id="particles-js"></div>
         <div class="container ">
-            <div class="row align-items-center ">
-                <div class="col-lg-6 text-center mb-4  mb-lg-0">
-                    <img src="\immagini\logo.png" class="img-fluid rounded opacity-0" id="foto-logo-about"
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-5 text-center mb-4  mb-lg-0">
+                    <img src="\immagini\fabio-senza-sfondo2.png" class="rounded img-fluid "  id="foto-logo-about"
                         alt="Foto del Barbiere">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-7 px-3">
                     <span id="aboutSpan" class="fw-bold"></span>
                     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
                     <script>
                         let animazioneTestoAbout = document.getElementById('aboutSpan');
-                        let fotoLogoAbout = document.getElementById('foto-logo-about');
+                        // let fotoLogoAbout = document.getElementById('foto-logo-about');
 
                         function animTestoAbout(animazioneTestoAbout) {
                             const observer = new IntersectionObserver(entries => {
@@ -31,7 +31,7 @@
                                     if (entry.isIntersecting) {
                                         var typed = new Typed(animazioneTestoAbout, {
                                             strings: [
-                                                '<h2 class="bangers fw-bold display-4 text-center text-nero section-title mb-3">CHI SONO</h2><p class="montserrat fs-5 text-nero mb-3">Ciao! Sono <strong> Fabio De Lucia </strong> , e la mia passione è trasformare i capelli in vere e proprie opere d&#39;arte. Con anni di esperienza e un occhio attento ai dettagli e alle ultime tendenze, offro un servizio personalizzato per esaltare il tuo stile unico.</p><p class="montserrat fs-5 text-nero mb-4">Dal taglio classico alla sfumatura più moderna, dalla cura della barba al trattamento rilassante, ogni servizio è pensato per farti sentire al meglio. Il mio salone è un luogo dove la tradizione della barberia incontra l&#39;innovazione.</p><a href="#gallery" class="btn btn-custom rounded-pill  montserrat">VEDI I MIEI LAVORI <i class="bi bi-images ms-2"></i></a>'
+                                                '<h2 class="bangers fw-bold display-2 text-center text-nero section-title mb-3">CHI SONO</h2><p class="montserrat fs-5 text-nero mb-3">Ciao! Sono <strong> Fabio De Lucia </strong> , e la mia passione è trasformare i capelli in vere e proprie opere d&#39;arte. Con anni di esperienza e un occhio attento ai dettagli e alle ultime tendenze, offro un servizio personalizzato per esaltare il tuo stile unico.</p><p class="montserrat fs-5 text-nero mb-4">Dal taglio classico alla sfumatura più moderna, dalla cura della barba al trattamento rilassante, ogni servizio è pensato per farti sentire al meglio. Il mio salone è un luogo dove la tradizione della barberia incontra l&#39;innovazione.</p><a href="#gallery" class="btn btn-custom rounded-pill  montserrat">VEDI I MIEI LAVORI <i class="bi bi-images ms-2"></i></a>'
                                             ],
                                             typeSpeed: 5,
                                         });

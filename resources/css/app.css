@@ -161,12 +161,17 @@ body {
 /* #endregion */
 
 /* #region NAVBAR */
-#navbar {
-    height: 80px;
-    transition: height 0.3s cubic-bezier(.4, 0, .2, 1);
-}
+
 
 /* #endregion */
+
+
+#foto-logo-about{
+    transition: transform 1s ease !important;
+}
+#foto-logo-about:hover{
+    transform: scale(1.05);
+}
 
 /* #region PARTICLES */
 canvas {
