@@ -10,6 +10,14 @@
     --fourth-color: #DFD0B8;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--primary-color);
+    background-color: var(--fourth-color);
+}
+
 /* #region BG (Tue classi) */
 .bg-nero {
     background-color: var(--primary-color);
@@ -52,7 +60,7 @@
 .montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -68,22 +76,19 @@
     line-height: 1.1;
 }
 
-/* #endregion */
-
-body {
-    font-family: "Montserrat", sans-serif;
-    /* Default font */
+.contact-icon {
+    font-size: 3rem;
 }
 
+/* #endregion */
 
 /* #region GALLERIA */
-.service-card,
+
 .gallery-item {
     border: 4px solid var(--primary-color);
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
-.service-card:hover,
 .gallery-item:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
@@ -94,8 +99,24 @@ body {
     object-fit: cover;
 }
 
+.service-card {
+    border: 4px solid var(--primary-color);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    /* Definita anche qui */
+}
+
+.service-card:hover {
+    border: 4px solid var(--fourth-color);
+    background-color: var(--primary-color);
+    color: var(--fourth-color);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
 /* #endregion */
 
+/* #region BTN */
 .btn-custom {
     border: 3px solid var(--primary-color);
     color: var(--primary-color);
@@ -116,7 +137,6 @@ body {
     padding: 0.75rem 1.5rem;
     transition: all 0.3s ease;
 }
-
 .btn-custom-filled:hover {
     background-color: var(--tertiary-color);
     border-color: white;
@@ -124,21 +144,29 @@ body {
     transform: scale(1.03);
 }
 
-.contact-icon {
-    font-size: 3rem;
+.btn-custom-contact {
+    background-color: var(--primary-color);
+    color: var(--fourth-color);
+    border: 3px solid var(--fourth-color);
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+.btn-custom-contact:hover {
+    border-color: var(--fourth-color);
+    color: var(--fourth-color);
+    transform: scale(1.03);
 }
 
-body {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: var(--primary-color);
-}
+/* #endregion */
 
+/* #region NAVBAR */
 #navbar {
     height: 80px;
     transition: height 0.3s cubic-bezier(.4, 0, .2, 1);
 }
+
+/* #endregion */
 
 /* #region PARTICLES */
 canvas {
@@ -151,7 +179,9 @@ canvas {
     width: 100%;
     height: 100%;
     background-color: #dfd0b8;
-    z-index: 1;
+    z-index: -1;
+    opacity: 0.6;
 }
+
 
 /* #endregion */

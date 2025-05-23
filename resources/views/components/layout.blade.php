@@ -14,8 +14,9 @@
 </head>
 
 <body>
-    <x-navbar/>
-    {{-- <div id="particles-js"></div>  --}}
+    <x-navbar />
+
+
     {{ $slot }}
 </body>
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
